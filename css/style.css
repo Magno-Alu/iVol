@@ -1,70 +1,75 @@
 /*Ini Globais do site*/
-html{
+html {
   background-color: orange;
   display: block;
   margin: 0%;
   padding: 0%;
 }
 
-body{
+body {
   background-color: red;
   margin: 0%;
   padding: 0%;
   display: grid;
   width: 100%;
   grid-template-columns: 100%;
-  grid-template-rows:15vh minmax(80vh, auto) 5vh;
+  grid-template-rows: 15vh minmax(80vh, auto) 5vh;
   grid-template-areas:
-  "header"
-  "main"
-  "footer";
+    "header"
+    "main"
+    "footer";
 }
 
 /*Fim Globais do site*/
 
 /*Ini Cabesario/Header do site =navPages*/
-#navPages{
+#navPages {
   grid-area: header;
-  background-color: black;
-  color: whitesmoke;
+  background-color: rgb(124, 213, 85);
+  color: black;
   margin: 0%;
   border: 1px solid whitesmoke;
   padding: 0%;
   display: grid;
-  grid-template-rows:10vh 5vh;
+  grid-template-rows: 10vh 5vh;
   grid-template-areas:
-  "Logo"
-  "Menu";
+    "Logo"
+    "Menu";
 }
 
-#navPages div,figure,h1,h2,ul{
+#navPages div,
+figure,
+h1,
+h2,
+ul {
   margin: 0%;
   padding: 0%;
 }
 
-#navPages div{
+#navPages div {
   display: flex;
-  /*justify-content: center;*/
+  justify-content: center;
 }
 
-#navPages div div{
+#navPages div div {
   flex-direction: column;
   font-size: 2cqh;
 }
 
-#navPages img{
+#navPages img {
   height: 10cqh;
   width: auto;
+  border-radius: 100%;
 }
 
-#navPages ul{
+#navPages ul {
   grid-area: Menu;
   list-style-type: none;
   overflow: hidden;
   background-color: #333;
 }
 
-#navPages li{
+#navPages li {
   float: left;
 }
 
@@ -78,7 +83,7 @@ body{
   text-decoration: none;
 }
 
-#navPages li a:hover{
+#navPages li a:hover {
   background-color: #111;
 }
 
@@ -86,22 +91,23 @@ body{
 
 /*Ini Conteudo/Main do site =manPages*/
 
-#manPages{
+#manPages {
   grid-area: main;
   display: block;
   height: minmax(80cqh, auto);
   width: 100cqw;
-  background-color:blue;
+  background-color: #B6F0C2;
   margin: 0%;
   padding: 0%;
 }
+
 /*Fim Conteudo/Main do site =manPages*/
 
 
 
 /*Ini Rodapé/Footer do site =fotPages*/
 
-#fotPages{
+#fotPages {
   grid-area: footer;
   display: inline;
   background-color: black;
@@ -112,3 +118,33 @@ body{
 }
 
 /*Fim Rodapé/Footer do site =fotPages*/
+
+
+#saudacao {
+  font-family: 'Ubuntu', sans-serif;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 5%;
+  text-align: center;
+  font-size: 36pt;
+  line-height: 35pt;
+}
+
+/*Classes*/
+
+.texto {
+  font-family: 'Ubuntu', sans-serif;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 15%;
+  text-align: justify;
+  font-size: 24pt;
+  line-height: 35pt;
+
+}
+
+
+.sub{
+  font-size: 20pt;
+  color: darkgray;
+}
