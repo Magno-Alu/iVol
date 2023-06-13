@@ -1,0 +1,114 @@
+/*Ini Globais do site*/
+html{
+  background-color: orange;
+  display: block;
+  margin: 0%;
+  padding: 0%;
+}
+
+body{
+  background-color: red;
+  margin: 0%;
+  padding: 0%;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 100%;
+  grid-template-rows:15vh minmax(80vh, auto) 5vh;
+  grid-template-areas:
+  "header"
+  "main"
+  "footer";
+}
+
+/*Fim Globais do site*/
+
+/*Ini Cabesario/Header do site =navPages*/
+#navPages{
+  grid-area: header;
+  background-color: black;
+  color: whitesmoke;
+  margin: 0%;
+  border: 1px solid whitesmoke;
+  padding: 0%;
+  display: grid;
+  grid-template-rows:10vh 5vh;
+  grid-template-areas:
+  "Logo"
+  "Menu";
+}
+
+#navPages div,figure,h1,h2,ul{
+  margin: 0%;
+  padding: 0%;
+}
+
+#navPages div{
+  display: flex;
+  /*justify-content: center;*/
+}
+
+#navPages div div{
+  flex-direction: column;
+  font-size: 2cqh;
+}
+
+#navPages img{
+  height: 10cqh;
+  width: auto;
+}
+
+#navPages ul{
+  grid-area: Menu;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navPages li{
+  float: left;
+}
+
+#navPages li a {
+  display: block;
+  height: 5cqh;
+  color: white;
+  text-align: center;
+  font-size: 2vh;
+  padding: 1.25vh 1.1cqw;
+  text-decoration: none;
+}
+
+#navPages li a:hover{
+  background-color: #111;
+}
+
+/*Fim Cabesario/Header do site =navPages*/
+
+/*Ini Conteudo/Main do site =manPages*/
+
+#manPages{
+  grid-area: main;
+  display: block;
+  height: minmax(80cqh, auto);
+  width: 100cqw;
+  background-color:blue;
+  margin: 0%;
+  padding: 0%;
+}
+/*Fim Conteudo/Main do site =manPages*/
+
+
+
+/*Ini Rodapé/Footer do site =fotPages*/
+
+#fotPages{
+  grid-area: footer;
+  display: inline;
+  background-color: black;
+  color: whitesmoke;
+  margin: 0%;
+  border: 1px solid whitesmoke;
+  padding: 0%;
+}
+
+/*Fim Rodapé/Footer do site =fotPages*/
