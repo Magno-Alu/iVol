@@ -95,7 +95,7 @@ ul {
   grid-area: main;
   display: block;
   height: minmax(80cqh, auto);
-  width: 100cqw;
+  width: 100%;
   background-color: #B6F0C2;
   margin: 0%;
   padding: 0%;
@@ -132,7 +132,7 @@ ul {
 
 /*Classes*/
 
-.texto {
+.textoHome {
   font-family: 'Ubuntu', sans-serif;
   margin-left: 20%;
   margin-right: 20%;
@@ -141,6 +141,14 @@ ul {
   font-size: 24pt;
   line-height: 35pt;
 
+}
+.textoSobre {
+  font-family: 'Ubuntu', sans-serif;
+  text-align: justify;
+  font-size: 18pt;
+  line-height: 30pt;
+  text-align: center;
+  
 }
 
 
